@@ -1,13 +1,51 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>rugo-cafe/</title>
+    <title>rugo-cafe</title>
     <link>https://rugo-cafe.github.io/</link>
-    <description>Recent content on rugo-cafe/</description>
+    <description>Recent content on rugo-cafe</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2008–2019, Steve Francia and the lee.so; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://rugo-cafe.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 18 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://rugo-cafe.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>contato</title>
+      <link>https://rugo-cafe.github.io/contact/</link>
+      <pubDate>Wed, 19 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://rugo-cafe.github.io/contact/</guid>
+      <description>github 🟣 rugo-cafe
+linkedin 🔵 vitor hugo cunha
+email ⚪ vitorhug.cunha@gmail.comwhatsapp 🟢 (48) 93618-0534</description>
+    </item>
+    
+    <item>
+      <title>sobre</title>
+      <link>https://rugo-cafe.github.io/about/</link>
+      <pubDate>Wed, 19 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://rugo-cafe.github.io/about/</guid>
+      <description>me chamo vitor hugo, possuo 21 anos, sou de florianópolis, santa catarina. estudante de design de produto pela UFSC. aspirante a desenvolvedor e apaixonado pela tecnologia. • educação técnico em informática integrado ao ensino médio ifc - campus camboriú • 2017 - 2019com este curso pude aprender algumas das principais tecnologias do mercado de desenvolvimento web como HTML, CSS e Javascript. assim como também um pouco de redes, hardware e manutenção de computadores.</description>
+    </item>
+    
+    <item>
+      <title>olá! bem vindo ao meu website pessoal/portfolio ☕</title>
+      <link>https://rugo-cafe.github.io/post/01_welcome/</link>
+      <pubDate>Tue, 18 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://rugo-cafe.github.io/post/01_welcome/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>minha primeira vez usando Hugo 🖍</title>
+      <link>https://rugo-cafe.github.io/post/02_devlog/</link>
+      <pubDate>Sat, 15 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://rugo-cafe.github.io/post/02_devlog/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title></title>
       <link>https://rugo-cafe.github.io/archives/</link>
@@ -15,33 +53,6 @@
       
       <guid>https://rugo-cafe.github.io/archives/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Markdown Syntax Guide</title>
-      <link>https://rugo-cafe.github.io/post/markdown-syntax/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://rugo-cafe.github.io/post/markdown-syntax/</guid>
-      <description>&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>contato</title>
-      <link>https://rugo-cafe.github.io/contact/</link>
-      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://rugo-cafe.github.io/contact/</guid>
-      <description>github linkedin</description>
-    </item>
-    
-    <item>
-      <title>sobre</title>
-      <link>https://rugo-cafe.github.io/about/</link>
-      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://rugo-cafe.github.io/about/</guid>
-      <description>possuo 21 anos e lorem ipsum</description>
     </item>
     
   </channel>

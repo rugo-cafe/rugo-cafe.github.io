@@ -1,20 +1,29 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>syntax on rugo-cafe/</title>
+    <title>syntax on rugo-cafe</title>
     <link>https://rugo-cafe.github.io/categories/syntax/</link>
-    <description>Recent content in syntax on rugo-cafe/</description>
+    <description>Recent content in syntax on rugo-cafe</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2008–2019, Steve Francia and the lee.so; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://rugo-cafe.github.io/categories/syntax/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 18 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://rugo-cafe.github.io/categories/syntax/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Markdown Syntax Guide</title>
-      <link>https://rugo-cafe.github.io/post/markdown-syntax/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      <title>olá! bem vindo ao meu website pessoal/portfolio ☕</title>
+      <link>https://rugo-cafe.github.io/post/01_welcome/</link>
+      <pubDate>Tue, 18 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://rugo-cafe.github.io/post/markdown-syntax/</guid>
-      <description>&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>
+      <guid>https://rugo-cafe.github.io/post/01_welcome/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>minha primeira vez usando Hugo 🖍</title>
+      <link>https://rugo-cafe.github.io/post/02_devlog/</link>
+      <pubDate>Sat, 15 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://rugo-cafe.github.io/post/02_devlog/</guid>
+      <description></description>
     </item>
     
   </channel>

@@ -2,50 +2,53 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://rugo-cafe.github.io/archives/</loc>
-    <lastmod>2019-05-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://rugo-cafe.github.io/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://rugo-cafe.github.io/categories/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://rugo-cafe.github.io/tags/css/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://rugo-cafe.github.io/tags/html/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://rugo-cafe.github.io/tags/markdown/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://rugo-cafe.github.io/post/markdown-syntax/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://rugo-cafe.github.io/post/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://rugo-cafe.github.io/series/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://rugo-cafe.github.io/categories/syntax/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://rugo-cafe.github.io/tags/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://rugo-cafe.github.io/categories/themes/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://rugo-cafe.github.io/series/themes-guide/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://rugo-cafe.github.io/contact/</loc>
-    <lastmod>2019-02-28T00:00:00+00:00</lastmod>
+    <lastmod>2023-07-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://rugo-cafe.github.io/about/</loc>
-    <lastmod>2019-02-28T00:00:00+00:00</lastmod>
+    <lastmod>2023-07-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://rugo-cafe.github.io/</loc>
+    <lastmod>2023-07-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://rugo-cafe.github.io/categories/</loc>
+    <lastmod>2023-07-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://rugo-cafe.github.io/tags/github-pages/</loc>
+    <lastmod>2023-07-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://rugo-cafe.github.io/tags/hugo/</loc>
+    <lastmod>2023-07-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://rugo-cafe.github.io/tags/markdown/</loc>
+    <lastmod>2023-07-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://rugo-cafe.github.io/post/01_welcome/</loc>
+    <lastmod>2023-07-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://rugo-cafe.github.io/post/</loc>
+    <lastmod>2023-07-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://rugo-cafe.github.io/series/</loc>
+    <lastmod>2023-07-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://rugo-cafe.github.io/categories/syntax/</loc>
+    <lastmod>2023-07-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://rugo-cafe.github.io/tags/</loc>
+    <lastmod>2023-07-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://rugo-cafe.github.io/categories/themes/</loc>
+    <lastmod>2023-07-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://rugo-cafe.github.io/series/themes-guide/</loc>
+    <lastmod>2023-07-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://rugo-cafe.github.io/post/02_devlog/</loc>
+    <lastmod>2023-07-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://rugo-cafe.github.io/archives/</loc>
+    <lastmod>2019-05-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://rugo-cafe.github.io/tags/index/</loc>
   </url>
