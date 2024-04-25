@@ -56,8 +56,8 @@
           </button>
     
         </div>
-          <h1 className="sm:mt-20 mt-16  text-center lg:text-7xl sm:text-6xl text-4xl font-jomo font-bold text-owange">designer, criativo.</h1>
-          <h1 className="sm:mt-20 mt-16 text-center lg:text-9xl sm:text-8xl text-5xl font-jomo font-bold text-dpurp dark:bg-main-bg">site em construção.</h1>
+          <h1 className="sm:mt-20 mt-16  text-center lg:text-7xl sm:text-6xl text-4xl font-gambetta font-bold text-owange">designer, criativo.</h1>
+          <h1 className="sm:mt-20 mt-16 text-center lg:text-9xl sm:text-8xl text-5xl font-jomo font-bold text-dpurp dark:text-main-bg">site em construção.</h1>
         <div>
 
         </div>
