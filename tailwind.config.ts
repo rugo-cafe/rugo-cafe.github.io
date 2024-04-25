@@ -16,8 +16,9 @@ const config: Config = {
         'dw': '-3px 6px 11px rgba(245, 0, 0, 1'
       },
       fontFamily: {
-        general: ["General Sans"],
-        gambetta: ["Gambetta"]
+        general: ["General Sans", 'sans-serif'],
+        jomo: ["Jomolhari", 'serif']
+
       },
       colors: {
         'main-bg': '#F5E9BF',
