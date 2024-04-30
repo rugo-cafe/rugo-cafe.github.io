@@ -11,6 +11,10 @@ const config: Config = {
   
   theme: {
     extend: {
+      backgroundImage: {
+        'noise': "url('/texture.svg')"
+      },
+
       dropShadow: { 
         'bt': '-3px 6px 11px rgba(0, 0, 0, 0.25)',
         'dw': '-3px 6px 11px rgba(245, 0, 0, 1'
@@ -23,13 +27,38 @@ const config: Config = {
       colors: {
         'main-bg': '#F5E9BF',
         'greenish': '#788374',
+        'greeny': '#4B5448',
         'owange': '#AA644D',
         'purp': '#372A39',
-        'dpurp': '#1F0F21'
+        'dpurp': '#1F0F21',
+        'bpurp': '#99759F'
       },
+      animation: {
+        blob: "blob 7s infinite"
+      },
+
+      keyframes: {
+        blob: {
+          "0%": {
+            transform: "translate(0px, 0px) scale(1)"
+          },
+          "33%": {
+            transform: "translate(30px, -5px) scale(1.2)",
+          },
+          "66%": {
+            transform: "translate(-20px, 20px) scale(0.8)",
+          },
+          "100%": {
+            transform: "translate(0px, 0px) scale(1)",
+          }
+        }
+      }
+    
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-animated')
+  ],
   
 };
 export default config;
