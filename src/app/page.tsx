@@ -33,7 +33,7 @@
       </head>
 
 
-      <body className="!scroll-smooth transform-gpu bg-main-bg  dark:bg-purp subpixel-antialiased bg-noise z-[100]">
+      <body className="!scroll-smooth bg-main-bg  dark:bg-purp subpixel-antialiased bg-noise z-[100]">
       
       
         <div className="flex flex-row justify-center items-center">
