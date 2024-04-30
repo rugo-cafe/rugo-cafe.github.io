@@ -33,7 +33,7 @@
       </head>
 
 
-      <body className="!scroll-smooth bg-main-bg  dark:bg-purp subpixel-antialiased bg-noise z-[100]">
+      <body className="!scroll-smooth bg-main-bg  dark:bg-purp subpixel-antialiased will-change-content">
       
       
         <div className="flex flex-row justify-center items-center">
@@ -64,7 +64,7 @@
         <div>
           
           {/* <h1 className="animate-pulse  mt-10 text-center text-xl font-jomo font-bold text-dpurp dark:text-main-bg">(site in construction)</h1>  */}
-          <h1 className="animate-fade animate-duration-2000 animate-delay-1000 mt-24 text-center lg:text-7xl sm:text-6xl text-4xl  font-jomo font-bold text-owange">creative designer</h1>
+          <h1 className="animate-fade animate-duration-2000 animate-delay-1000 mt-24 text-center lg:text-7xl sm:text-6xl text-4xl  font-jomo font-bold text-owange">web designer</h1>
               <div className="animate-fade animate-duration-2000 animate-delay-1000 h-screen flex items-center justify-center  relative">
 
                 
