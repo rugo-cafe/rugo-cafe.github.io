@@ -43,10 +43,18 @@ const config: Config = {
         'bpurp': '#99759F'
       },
       animation: {
-        blob: "blob 7s infinite"
+        blob: "blob 7s infinite",
+        fade: "fadeOut 5s ease-in-out"
       },
 
       keyframes: {
+
+
+        click: {
+          '0%': {transform: "translate(0px,0px)"},
+          '100%': {transform: "translate(0px,5px)"},
+          
+        },
         blob: {
           "0%": {
             transform: "translate(0px, 0px) scale(1)"
