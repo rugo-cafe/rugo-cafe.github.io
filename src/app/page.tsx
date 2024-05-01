@@ -1,8 +1,7 @@
   "use client";
   import { useState , useRef} from "react";
   import Link from 'next/link';
-  import {motion, useTransform} from "framer-motion";
-  import { useScroll } from "framer-motion";
+  import {motion, useTransform, useScroll, useWillChange} from "framer-motion";
 
 
   export default function Home() {
@@ -17,11 +16,15 @@
     const ref = useRef<HTMLDivElement>(null);
     const { scrollYProgress } = useScroll({
       target: ref,
-      offset: ["2 3", "1.33 1"],
+      offset: ["start end", "end end"],
     });
 
     const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.5, 1]);
     const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
+
+    const willChange = useWillChange();
+    
+
 
     return ( <>
     <html className={`${darkMode && "dark"}`}>
@@ -38,12 +41,14 @@
                 .btn-drop-shadow:hover {
                   transform: translateY(-5px);
                 }
+
+            
               `}
             </style>
       </head>
 
 
-      <motion.body className="!scroll-smooth bg-main-bg  dark:bg-purp subpixel-antialiased will-change-content" initial="initial" animate="animate" >
+      <motion.body className=" bg-main-bg  dark:bg-purp subpixel-antialiased will-change-content" initial="initial" animate="animate" >
       
       
         <motion.nav className="ml-6 mx-auto" 
@@ -130,14 +135,16 @@
         </div>
         
         {/* about */}
-        <motion.div ref={ref} style={{scale: scaleProgress, opacity: opacityProgress}} className="mt-32">
-              <h1 className="font-jomo text-center font-bold lg:text-7xl sm:text-6xl text-5xl text-purp dark:text-main-bg animate-fade delay-400">who am i?</h1>
+        <div className=" dark:bg-owange bg-greenish w-ful py-1 ">
+              
+              <motion.div  ref={ref} style={{scale: scaleProgress, opacity: opacityProgress, willChange}}   className="mt-32">
+              <h1 className="font-jomo text-center font-bold lg:text-7xl sm:text-6xl text-5xl text-dpurp ">who am i?</h1>
               <img className="drop-shadow-xl mx-auto m-12  flex justify-center items-center md:h-96 md:w-96 h-58 w-58" src="/me.svg" alt="Photograph of website's author Vitor Hugo." />
-              <p className="text-center md:text-2xl lg:text-3xl text-xl text-purp dark:text-main-bg m-16 md:ml-42 md:mr-42 lg:ml-48 lg:mr-48">i am a web designer and developer based in brazil. currently studying product design in university and web development on my own.</p>
+              <p className="text-center md:text-2xl lg:text-3xl text-xl text-purp  m-16 md:ml-42 md:mr-42 lg:ml-48 lg:mr-48">i am a web designer and developer based in brazil. currently studying product design in university and web development on my own.</p>
+              </motion.div>
         
         
-        
-        </motion.div>
+        </div>
 
       
       
