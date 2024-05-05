@@ -34,13 +34,15 @@ const config: Config = {
 
       },
       colors: {
+        'wbeige': '#FFF7DA',
+        'dbeige': '#D8C9A4',
         'main-bg': '#F5E9BF',
         'greenish': '#788374',
         'greeny': '#4B5448',
         'owange': '#AA644D',
         'purp': '#372A39',
         'dpurp': '#1F0F21',
-        'bpurp': '#99759F'
+        'bpurp': '#463B47'
       },
       animation: {
         blob: "blob 7s infinite",
