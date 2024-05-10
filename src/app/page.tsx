@@ -304,7 +304,7 @@
 
 
                 </MotionLink>
-                <p className="dark:text-dbeige text-purp text-sm">made with &#9829; by vitor hugo cunha</p>
+                <p className="dark:text-dbeige text-purp text-sm">made with ❤️ by vitor hugo cunha</p>
                 </div>
 
             </motion.div>
