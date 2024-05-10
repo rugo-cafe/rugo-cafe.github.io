@@ -5,11 +5,58 @@
   
 
   const MotionLink = motion(Link)
+
+  const titleVariants = {
+      initial: {
+        opacity: 1,
+        x: '-12rem'
+      },
+      visible: {
+        opacity: 1,
+        x: 0
+      }
+  }
+
+  type Props = {
+    children?: React.ReactNode
+  };
+  
+
+  function Faded({ children }: Props): React.ReactNode {
+    return (
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        transition={{ type: 'spring',delay: 0.5, duration: 1.2}}
+        variants={{
+          visible: { opacity: 1, x: 0},
+          hidden: { opacity: 0, x: '-12rem' }
+        }}
+      >
+        {children}
+      </motion.div>
+    );
+  }
+
+  function FadeIn({ children }: Props): React.ReactNode {
+    return (
+      <motion.div
+        initial={{ opacity: 0}} 
+        whileInView={{ opacity: 1}} 
+        transition={{delay: 0.5, duration: 1.2}}
+      >
+        {children}
+      </motion.div>
+    );
+  }
+
   
 
 
-
   export default function Home() {
+
+   
 
     const [darkMode, setDarkMode] = useState(false);
 
@@ -18,13 +65,15 @@
     
     }
 
+    
     const ref = useRef<HTMLDivElement>(null);
-
 
     const { scrollYProgress } = useScroll({
       target: ref,
       offset: ["start end", "end end"],
     });
+
+    
  
 
 
@@ -35,11 +84,13 @@
     
     const scrolltoHash = function (element_id: string) {
       const element = document.getElementById(element_id)
-      element?.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+      element?.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
     }
 
 
     return ( <>
+    
+
     <html className={`${darkMode && "dark"}`}>
       <head>
       <link rel="icon" href="/logo-dark.svg" />
@@ -49,7 +100,7 @@
       </head>
 
 
-      <motion.body  className="scroll-smooth bg-main-bg  dark:bg-purp subpixel-antialiased will-change-content" initial="initial" animate="animate">
+      <motion.body  className="scroll-smooth bg-main-bg  dark:bg-purp subpixel-antialiased will-change-content selection:bg-owange" initial="initial" animate="animate">
       
       
         <motion.nav  className="ml-6 mx-auto" 
@@ -83,12 +134,15 @@
                   <MotionLink href="" className="m-2 text-purp  dark:text-main-bg opacity-70 hover:opacity-100" whileHover={{scale: 1.1}} onClick={() => scrolltoHash('footer')}>
                     <p>contact</p>
                   </MotionLink>
-                  <motion.button className="m-2 text-purp  dark:text-main-bg opacity-70 hover:opacity-100 delay-500" onClick={toggleDarkMode} whileHover={{scale: 1.1}}>
+                  <motion.button className="flex items-center mt-1 m-2 text-purp  dark:text-main-bg opacity-70 hover:opacity-100 delay-500 " onClick={toggleDarkMode} whileHover={{scale: 1.1}}>
                     
                       {darkMode ? "light mode" : "dark mode"}
-                      
+                      {darkMode ? (<svg className="animate-spin-slow w-4 flex items-center justify-center  ml-2 text-main-bg fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M361.5 1.2c5 2.1 8.6 6.6 9.6 11.9L391 121l107.9 19.8c5.3 1 9.8 4.6 11.9 9.6s1.5 10.7-1.6 15.2L446.9 256l62.3 90.3c3.1 4.5 3.7 10.2 1.6 15.2s-6.6 8.6-11.9 9.6L391 391 371.1 498.9c-1 5.3-4.6 9.8-9.6 11.9s-10.7 1.5-15.2-1.6L256 446.9l-90.3 62.3c-4.5 3.1-10.2 3.7-15.2 1.6s-8.6-6.6-9.6-11.9L121 391 13.1 371.1c-5.3-1-9.8-4.6-11.9-9.6s-1.5-10.7 1.6-15.2L65.1 256 2.8 165.7c-3.1-4.5-3.7-10.2-1.6-15.2s6.6-8.6 11.9-9.6L121 121 140.9 13.1c1-5.3 4.6-9.8 9.6-11.9s10.7-1.5 15.2 1.6L256 65.1 346.3 2.8c4.5-3.1 10.2-3.7 15.2-1.6zM160 256a96 96 0 1 1 192 0 96 96 0 1 1 -192 0zm224 0a128 128 0 1 0 -256 0 128 128 0 1 0 256 0z"/></svg>
+                            ) :     (<svg className="animate-bounce-slow flip-x w-3 flex items-center justify-center ml-2 text-purp fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M223.5 32C100 32 0 132.3 0 256S100 480 223.5 480c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"/></svg>
+                     
+                      )}
                   </motion.button>
-
+                  
               </div>
           
           
@@ -122,27 +176,97 @@
         </div>
         
         {/* about */}
-        <div id="about" className=" dark:bg-greeny bg-greenish w-full py-3">
+        <div id="about" className="dark:bg-greeny bg-greenish w-full py-3">
               
-              <motion.div  ref={ref} style={{scale: scaleProgress, opacity: opacityProgress, willChange}}   className="mt-32">
+              <motion.div  ref={ref} style={{scale: scaleProgress, opacity: opacityProgress, willChange}}   className="sm:mt-10">
+                
               <h1 className="font-jomo text-center font-bold lg:text-7xl sm:text-6xl text-5xl text-dpurp dark:text-wbeige">who am i?</h1>
-              <img className="drop-shadow-xl mx-auto m-12  flex justify-center items-center md:h-96 md:w-96 h-58 w-58" src="/me.svg" alt="Photograph of website's author Vitor Hugo." />
-              <p className="text-center md:text-2xl lg:text-3xl text-xl text-purp dark:text-wbeige  m-16 md:ml-42 md:mr-42 lg:ml-48 lg:mr-48">i am a web designer and developer based in brazil. currently studying product design in university and web development on my own. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem, nemo itaque! Placeat excepturi consequuntur et quasi at autem quod, mollitia aliquid dolorem itaque nobis magnam odio explicabo tenetur minima quam.</p>
+                <div className="md:flex md:mt-10">
+              <img className="drop-shadow-2xl mx-auto mt-10 mb-8 lg:align-middle md:m-10 flex justify-center items-center lg:h-96 md:h-68 h-46 w-46" src="/me.svg" alt="Photograph of website's author Vitor Hugo." />
+              <p className="text-balance text-start lg:align-middle lg:mt-24 sm:ml-[5rem] sm:mr-[5rem] md:mt-20 md:mb-20 ml-[4.5rem] mr-[4.5rem] mb-14 md:ml-8 md:mr-10 lg:text-2xl md:text-xl text-lg text-dpurp dark:text-wbeige leading-relaxed">i am a web designer and developer based in brazil. currently studying product design in university and web development on my own. i have a major passion in technology and it is what keeps me motivated everyday. 
+              i really like to learn, and i am learning new things everyday. my hobbies are video games, watching movies, listening to music, mechanical keyboards and game development.</p>
+                </div>
+              
               </motion.div>
         
         
         </div>
           
-          {/* <div id="projects" className="relative">
+          <motion.div style={{willChange}} id="projects" className="py-14 w-full bg-dbeige dark:bg-bpurp pb-5" initial={{ opacity: 0}} whileInView={{ opacity: 1}} exit={{opacity: 0}} transition={{delay: 0.5, duration: 1.2}}>
 
-            <motion.div style={{willChange}} className="h-[80vh]  bg-dbeige dark:bg-bpurp" >
-                <motion.h1 className="p-8 font-jomo text-center font-bold lg:text-7xl sm:text-6xl text-5xl text-dpurp dark:text-wbeige"  initial={{ opacity: 0 , x: '-12rem'}} whileInView={{ opacity: 1 }} animate={{x:0}} transition={{type: 'spring',delay: 0.5, duration: 1.2}}>
+            <motion.div  className="" >
+
+                <Faded>
+                <motion.h1 className="font-jomo text-center font-bold lg:text-7xl sm:text-6xl text-5xl text-dpurp dark:text-wbeige">
                   projects
                 </motion.h1>
+                </Faded>
+                <motion.div className="grid justify-center  items-center md:m-24 lg:m-32 m-5 mt-16" >
+                    
+                    <FadeIn>
+                    <motion.div>
+                    
+                    <Faded>
+                    <motion.h1 className=" text-center  font-bold text-2xl md:text-4xl lg:text-5xl text-owange dark:text-main-bg">interface prototypes</motion.h1>
+                    </Faded>
+                   
+                    {/* meditation app */}
+                    <a href="/projects/1.webp" target="_blank">
+                    <img title="click to expand" className="hover:opacity-70 transition-opacity duration-1000 flex justify-center items-center lg:mt-18 w-500  md: " src="/projects/1.webp" alt="Project 1: Interface prototype of an meditation app"  />
+                    </a>
+                    <motion.h2  
+                    className="m-5 mt-10 font-bold text-dpurp opacity-50 text-center lg:text-2xl dark:text-wbeige">concept of meditation app UI for iOS </motion.h2>
+                    <p className="text-start flex items-center justify-center text-lg m-10  md:m-12 text-pretty md:text-2xl text-dpurp dark:text-wbeige">everything was designed on figma, a concept of an app that i thought it would help me in someway if  it existed.</p>
+                    </motion.div>
+                    </FadeIn>
+                    {/* audy.io */}
+                    <FadeIn>
+                    <motion.div>
+                    <a href="/projects/2.webp" target="_blank">
+                    <img title="click to expand" className="hover:opacity-70 transition-opacity  duration-1000 flex justify-center items-center lg:mt-18 w-500  md: " src="/projects/2.webp" alt="Project 1: Interface prototype of an meditation app"  />
+                    </a>
+                    <motion.h2 className="m-5 mt-10 font-bold text-dpurp opacity-50 text-center lg:text-2xl dark:text-wbeige">&#123; audy.io 	&#125;<br /> concept of music streaming app UI for desktop. </motion.h2>
+                    <p className="text-start flex items-center justify-center text-lg m-10  md:m-12 text-pretty md:text-2xl text-dpurp dark:text-wbeige">also designed entirely on figma motivaded by my discontent on spotify's UI, in a time  that it was really really inconsistent. so i had to do it.
+                    </p>
+                    </motion.div>
+                    </FadeIn>
+                    
+                    <Faded>
+                      <motion.h1 className=" text-center  font-bold text-2xl md:text-4xl lg:text-5xl text-owange dark:text-main-bg">websites</motion.h1>
+                    </Faded>
+
+                    {/* bioma */}
+                    <FadeIn>
+                    <Link href="/projects/3.webp" target="_blank">
+                      <img src="/projects/3.webp" title="click to expand" alt="Fazendas Bioma Website" className="hover:opacity-70 transition-opacity duration-1000 flex justify-center items-center lg:mt-18 w-500" />
+                    </Link>
+                    <MotionLink href="https://fazendasbioma.com.br" target="_blank" className="flex justify-center items-center text-dpurp dark:text-wbeige  opacity-70 hover:opacity-100 transition-opacity duration-1000" whileHover={{scale: 1.1}}>
+                    <h2 className="flex justify-center items-center cursor-pointer m-5 mt-10 font-bold  text-center lg:text-2xl">fazendas bioma's website <br /> made using wordpress</h2>
+                    <svg className="w-5 flex justify-center items-center self-center fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"/></svg>
+                    </MotionLink>
+                    <p className="text-start flex items-center justify-center text-lg m-10 text-pretty md:text-2xl text-dpurp dark:text-wbeige">this website's UI was initially prototyped in figma by me, and then ported it to wordpress. it was made during the time that i worked for the company.</p>
+                    </FadeIn>
+
+                    {/* pportflio */}
+                    <Faded>
+                      <h1 className="animate-pulse text-center font-bold text-3xl md:text-4xl lg:text-5xl text-purp dark:text-owange mt-5"> this website </h1>
+                    </Faded>
+                    
+                    <motion.div> 
+                        
+                        <FadeIn>
+                        <div className="text-start text-lg m-10 text-pretty md:text-2xl text-dpurp dark:text-wbeige">soo... this piece of technolgy was made with NextJS, TailwindCSS and Framer Motion. my main inspirations was retro tech themes and colors, such as <Link href="https://github.com/morhetz/gruvbox" target="_blank" className="text-pinky underline hover:text-owange">gruvbox color scheme</Link>.</div>
+                        </FadeIn>
+                    </motion.div>
+                    
+
+                </motion.div>
+
+
 
             </motion.div>
 
-          </div> */}
+          </motion.div>
 
 
 
@@ -180,7 +304,7 @@
 
 
                 </MotionLink>
-                <p className="text-purp text-sm">made with ❤ by vitor hugo cunha</p>
+                <p className="dark:text-dbeige text-purp text-sm">made with &#9829; by vitor hugo cunha</p>
                 </div>
 
             </motion.div>

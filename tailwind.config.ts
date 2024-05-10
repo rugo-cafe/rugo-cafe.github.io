@@ -42,11 +42,14 @@ const config: Config = {
         'owange': '#AA644D',
         'purp': '#372A39',
         'dpurp': '#1F0F21',
-        'bpurp': '#463B47'
+        'bpurp': '#463B47',
+        'pinky': '#B8768E'
       },
       animation: {
         blob: "blob 7s infinite",
-        fade: "fadeOut 5s ease-in-out"
+        fade: "fadeOut 5s ease-in-out",
+        'spin-slow': 'spin 5s linear infinite',
+        'bounce-slow': 'bounce 2s linear infinite'
       },
 
       keyframes: {
