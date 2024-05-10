@@ -225,7 +225,7 @@
                     <a href="/projects/2.webp" target="_blank">
                     <img title="click to expand" className="hover:opacity-70 transition-opacity  duration-1000 flex justify-center items-center lg:mt-18 w-500  md: " src="/projects/2.webp" alt="Project 1: Interface prototype of an meditation app"  />
                     </a>
-                    <motion.h2 className="m-5 mt-10 font-bold text-dpurp opacity-50 text-center lg:text-2xl dark:text-wbeige">&#123; audy.io 	&#125;<br /> concept of music streaming app UI for desktop. </motion.h2>
+                    <motion.h2 className="m-5 mt-10 font-bold text-dpurp opacity-50 text-center lg:text-2xl dark:text-wbeige"> audy.io 	<br /> concept of music streaming app UI for desktop. </motion.h2>
                     <p className="text-start flex items-center justify-center text-lg m-10  md:m-12 text-pretty md:text-2xl text-dpurp dark:text-wbeige">also designed entirely on figma motivaded by my discontent on spotify's UI, in a time  that it was really really inconsistent. so i had to do it.
                     </p>
                     </motion.div>
