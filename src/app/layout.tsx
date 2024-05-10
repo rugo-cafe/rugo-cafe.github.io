@@ -7,6 +7,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "vitor hugo cunha",
   description: "creative designer, web developer.",
+  openGraph: {
+    images: '/projects/logo-dark.svg/'
+  } 
 };
 
 export default function RootLayout({

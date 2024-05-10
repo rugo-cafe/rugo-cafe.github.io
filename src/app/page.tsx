@@ -88,7 +88,7 @@
       <link rel="icon" href="/logo-dark.svg" />
       <link href="https://fonts.cdnfonts.com/css/general-sans" rel="stylesheet" />
       <link href="https://fonts.cdnfonts.com/css/jomolhari" rel="stylesheet" />    
-      <title>vitor hugo cunha</title>
+      <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
       </head>
 
 
