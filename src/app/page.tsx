@@ -2,20 +2,12 @@
   import { useState , useRef} from "react";
   import Link from 'next/link';
   import {motion, useTransform, useScroll, useWillChange} from "framer-motion";
+  import Image from 'next/image'
   
 
   const MotionLink = motion(Link)
 
-  const titleVariants = {
-      initial: {
-        opacity: 1,
-        x: '-12rem'
-      },
-      visible: {
-        opacity: 1,
-        x: 0
-      }
-  }
+
 
   type Props = {
     children?: React.ReactNode
