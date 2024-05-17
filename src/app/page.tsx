@@ -89,6 +89,7 @@
       <link href="https://fonts.cdnfonts.com/css/general-sans" rel="stylesheet" />
       <link href="https://fonts.cdnfonts.com/css/jomolhari" rel="stylesheet" />    
       <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+      <meta property="og:image" content="/logo-dark.svg" />
       </head>
 
 
@@ -173,10 +174,9 @@
               <motion.div  ref={ref} style={{scale: scaleProgress, opacity: opacityProgress, willChange}}   className="sm:mt-10">
                 
               <h1 className="font-jomo text-center font-bold lg:text-7xl sm:text-6xl text-5xl text-dpurp dark:text-wbeige">who am i?</h1>
-                <div className="md:flex md:mt-10">
+                <div className="md:flex md:mt-10 lg:ml-16 lg:mr-16 2xl:ml-64 2xl:mr-64">
               <img className="drop-shadow-2xl mx-auto mt-10 mb-8 lg:align-middle md:m-10 flex justify-center items-center lg:h-96 md:h-68 h-46 w-46" src="/me.svg" alt="Photograph of website's author Vitor Hugo." />
-              <p className="text-balance text-start lg:align-middle lg:mt-24 sm:ml-[5rem] sm:mr-[5rem] md:mt-20 md:mb-20 ml-[4.5rem] mr-[4.5rem] mb-14 md:ml-8 md:mr-10 lg:text-2xl md:text-xl text-lg text-dpurp dark:text-wbeige leading-relaxed">i am a web designer and developer based in brazil. currently studying product design in university and web development on my own. i have a major passion in technology and it is what keeps me motivated everyday. 
-              i really like to learn, and i am learning new things everyday. my hobbies are video games, watching movies, listening to music, mechanical keyboards and game development.</p>
+              <p className="text-balance text-start lg:align-middle lg:mt-24 sm:ml-[5rem] sm:mr-[5rem] md:mt-20 md:mb-20 ml-[4.5rem] mr-[4.5rem] mb-14 md:ml-8 md:mr-10 lg:text-2xl md:text-xl text-lg text-dpurp dark:text-wbeige leading-relaxed">i am a web designer and developer based in brazil. currently studying product design in university and web development on my own. i have a major passion in technology and it is what keeps me motivated everyday. i really like to learn, and i am learning new thins everyday too. my hobbies are video games, watching movies, listening to music, mechanical keyboards and game development.</p>
                 </div>
               
               </motion.div>
@@ -186,14 +186,14 @@
           
           <motion.div style={{willChange}} id="projects" className="py-14 w-full bg-dbeige dark:bg-bpurp pb-5" initial={{ opacity: 0}} whileInView={{ opacity: 1}} exit={{opacity: 0}} transition={{delay: 0.5, duration: 1.2}}>
 
-            <motion.div  className="" >
+            <motion.div  className="lg:ml-16 lg:mr-16 2xl:ml-72 2xl:mr-72" >
 
                 <Faded>
                 <motion.h1 className="font-jomo text-center font-bold lg:text-7xl sm:text-6xl text-5xl text-dpurp dark:text-wbeige">
                   projects
                 </motion.h1>
                 </Faded>
-                <motion.div className="grid justify-center  items-center md:m-24 lg:m-32 m-5 mt-16" >
+                <motion.div className="grid justify-center  items-center md:m-24 lg:m-32 m-5 mt-16 " >
                     
                     <FadeIn>
                     <motion.div>
@@ -208,7 +208,7 @@
                     </a>
                     <motion.h2  
                     className="m-5 mt-10 font-bold text-dpurp opacity-50 text-center lg:text-2xl dark:text-wbeige">concept of meditation app UI for iOS </motion.h2>
-                    <p className="text-start flex items-center justify-center text-lg m-10  md:m-12 text-pretty md:text-2xl text-dpurp dark:text-wbeige">everything was designed on figma, a concept of an app that i thought it would help me in someway if  it existed.</p>
+                    <p className="text-start flex items-center justify-center text-lg m-10  md:m-12 text-pretty md:text-2xl text-dpurp dark:text-wbeige">this UI concept was totally designed and prototyped on figma. a guided meditation app concept, where you can choose the voice of narrator, the relaxing sound (as rain, waterfall, etc). the motivation behind this prototype was thinking that this app would help me someway.</p>
                     </motion.div>
                     </FadeIn>
                     {/* audy.io */}
@@ -218,7 +218,7 @@
                     <img title="click to expand" className="hover:opacity-70 transition-opacity  duration-1000 flex justify-center items-center lg:mt-18 w-500  md: " src="/projects/2.webp" alt="Project 1: Interface prototype of an meditation app"  />
                     </a>
                     <motion.h2 className="m-5 mt-10 font-bold text-dpurp opacity-50 text-center lg:text-2xl dark:text-wbeige"> audy.io 	<br /> concept of music streaming app UI for desktop. </motion.h2>
-                    <p className="text-start flex items-center justify-center text-lg m-10  md:m-12 text-pretty md:text-2xl text-dpurp dark:text-wbeige">also designed entirely on figma. this design was motivated by my discontent on spotify's UI, in a time  that it was really, really inconsistent. so i had to do it.
+                    <p className="text-start flex items-center justify-center text-lg m-10  md:m-12 text-pretty md:text-2xl text-dpurp dark:text-wbeige">also designed entirely on figma, based from my discontent on spotify's UI, in a time that it was really inconsistent, so i thought "i have to do something!!!". and that's where this app concept came about, which i named 'audy.i', because of my passion for music and design.
                     </p>
                     </motion.div>
                     </FadeIn>
@@ -236,7 +236,8 @@
                     <h2 className="flex justify-center items-center cursor-pointer m-5 mt-10 font-bold  text-center lg:text-2xl">fazendas bioma's website <br /> made using wordpress</h2>
                     <svg className="w-5 flex justify-center items-center self-center fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"/></svg>
                     </MotionLink>
-                    <p className="text-start flex items-center justify-center text-lg m-10 text-pretty md:text-2xl text-dpurp dark:text-wbeige">this website's UI was initially prototyped in figma by me, and then ported it to wordpress. it was made during the time that i worked for the company.</p>
+                    <p className="text-start flex items-center justify-center text-lg m-10 text-pretty md:text-2xl text-dpurp dark:text-wbeige">initially prototyped on figma, and later made on wordpress. it was made during my time working for the company.
+</p>
                     </FadeIn>
 
                     {/* pportflio */}
