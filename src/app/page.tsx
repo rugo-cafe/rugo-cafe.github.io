@@ -186,12 +186,12 @@
                   
                 <div className="mt-16">
 
-                <h3 className="text-center text-4xl lg:text-6xl font-jomo font-bold text-dpurp dark:text-main-bg md:text-5xl">skills</h3>
+                <h3 className="text-center text-4xl lg:text-6xl font-jomo font-bold text-dpurp dark:text-main-bg md:text-5xl px-16">skills</h3>
 
                   
                   <motion.div className="m-10 text-dpurp dark:text-main-bg flex items-center justify-center space-x-8" >
 
-                        <p className="md:text-lg text-wbeige dark:text-dpurp">hard</p>
+                        
                         
                         <div className="">
                           <p className="text-start md:text-lg">photoshop</p>
@@ -265,7 +265,7 @@
                       
                   {/* segunda coluna */}
 
-                  <motion.div className="mt-10 text-dpurp dark:text-main-bg flex items-center justify-center space-x-8 ml-8" >
+                  <motion.div className="mt-10 text-dpurp dark:text-main-bg flex items-center justify-center space-x-8 mr-8" >
                         <p></p>
                         <div className="">
                           <p className="text-start md:text-lg">html, css, js</p>
@@ -341,10 +341,9 @@
                       {/* terceira coluna */}
 
                   <motion.div className="mt-10 text-dpurp dark:text-main-bg flex items-center justify-center space-x-4 mb-16 " >
-                        <p className="md:text-lg mr-1.5 text-dbeige dark:text-pinky">soft</p>
                         <div className="">
-                          <p className="text-start md:text-lg">communication</p>
-                            <div className="flex justify-center space-x-2 w-full">
+                          <p className="text-sm text-start md:text-lg">communication</p>
+                            <div className="mr-1 flex justify-center space-x-2 w-full">
 
                               <svg className="flex items-center mt-2 w-3 fill-wbeige" width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <circle cx="9.5" cy="8.5" r="8.5"/>
@@ -456,7 +455,7 @@
                     <img title="click to expand" className="hover:opacity-70 transition-opacity  duration-1000 flex justify-center items-center lg:mt-18 w-500  md: " src="/projects/2.webp" alt="Project 1: Interface prototype of an meditation app"  />
                     </a>
                     <motion.h2 className="m-5 mt-10 font-bold text-dpurp opacity-50 text-center lg:text-2xl dark:text-wbeige"> audy.io 	<br /> concept of music streaming app UI for desktop. </motion.h2>
-                    <p className="text-start flex items-center justify-center text-lg m-10  md:m-12 text-pretty md:text-2xl text-dpurp dark:text-wbeige">also designed entirely on figma, based from my discontent on spotify's UI, in a time that it was really inconsistent, so i thought "i have to do something!!!". and that's where this app concept came about, which i named 'audy.i', because of my passion for music and design.
+                    <p className="text-start flex items-center justify-center text-lg m-10  md:m-12 text-pretty md:text-2xl text-dpurp dark:text-wbeige">also designed entirely on figma, based from my discontent on spotify's UI, in a time that it was really inconsistent, so i thought "i have to do something!!!". and that's where this app concept came about, which i named 'audy.io', because of my passion for music and design.
                     </p>
                     </motion.div>
                     </FadeIn>
