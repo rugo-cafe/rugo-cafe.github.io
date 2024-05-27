@@ -49,6 +49,7 @@
   export default function Home() {
 
    
+    
 
     const [darkMode, setDarkMode] = useState(false);
 
@@ -169,15 +170,252 @@
         </div>
         
         {/* about */}
-        <div id="about" className="dark:bg-greeny bg-greenish w-full py-3">
+        <div id="about" className="dark:bg-greeny bg-greenish w-full py-16">
               
               <motion.div  ref={ref} style={{scale: scaleProgress, opacity: opacityProgress, willChange}}   className="sm:mt-10">
                 
-              <h1 className="font-jomo text-center font-bold lg:text-7xl sm:text-6xl text-5xl text-dpurp dark:text-wbeige">who am i?</h1>
+                <h1 className="font-jomo text-center font-bold lg:text-7xl sm:text-6xl text-5xl text-dpurp dark:text-wbeige mt-5">who am i?</h1>
                 <div className="md:flex md:mt-10 lg:ml-16 lg:mr-16 2xl:ml-64 2xl:mr-64">
-              <img className="drop-shadow-2xl mx-auto mt-10 mb-8 lg:align-middle md:m-10 flex justify-center items-center lg:h-96 md:h-68 h-46 w-46" src="/me.svg" alt="Photograph of website's author Vitor Hugo." />
-              <p className="text-balance text-start lg:align-middle lg:mt-24 sm:ml-[5rem] sm:mr-[5rem] md:mt-20 md:mb-20 ml-[4.5rem] mr-[4.5rem] mb-14 md:ml-8 md:mr-10 lg:text-2xl md:text-xl text-lg text-dpurp dark:text-wbeige leading-relaxed">i am a web designer and developer based in brazil. currently studying product design in university and web development on my own. i have a major passion in technology and it is what keeps me motivated everyday. i really like to learn, and i am learning new thins everyday too. my hobbies are video games, watching movies, listening to music, mechanical keyboards and game development.</p>
+                <img className="drop-shadow-2xl mx-auto mt-10 mb-8 lg:align-middle md:m-10 flex justify-center items-center lg:h-96 md:h-68 h-46 w-46" src="/me.svg" alt="Photograph of website's author Vitor Hugo." />
+                <p className="text-balance text-start lg:align-middle lg:mt-24 sm:ml-[5rem] sm:mr-[5rem] md:mt-20 md:mb-20 ml-[4.5rem] mr-[4.5rem] mb-14 md:ml-8 md:mr-10 lg:text-2xl md:text-xl text-lg text-dpurp dark:text-wbeige leading-relaxed">i am a web designer and developer based in brazil. currently studying product design in university and web development on my own. i have a major passion in technology and it is what keeps me motivated everyday. i really like to learn, and i am learning new thins everyday too. my hobbies are video games, watching movies, listening to music, mechanical keyboards and game development.</p>
+                  
+
+                      
+
                 </div>
+                  
+                <div className="mt-16">
+
+                <h3 className="text-center text-4xl lg:text-6xl font-jomo font-bold text-dpurp dark:text-main-bg md:text-5xl">skills</h3>
+
+                  
+                  <motion.div className="m-10 text-dpurp dark:text-main-bg flex items-center justify-center space-x-8" >
+
+                        <p className="md:text-lg text-wbeige dark:text-dpurp">hard</p>
+                        
+                        <div className="">
+                          <p className="text-start md:text-lg">photoshop</p>
+                            <div className="flex justify-center space-x-2">
+
+                              <svg className="flex items-center mt-2 w-3 fill-wbeige" width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="9.5" cy="8.5" r="8.5"/>
+                              </svg>
+
+                              <svg className="flex items-center mt-2 w-3 fill-wbeige" width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="9.5" cy="8.5" r="8.5"/>
+                              </svg>
+
+                              <svg className="flex items-center mt-2 w-3 fill-wbeige" width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="9.5" cy="8.5" r="8.5"/>
+                              </svg>
+
+                              <svg className="flex items-center mt-2 w-3 fill-wbeige" width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="9.5" cy="8.5" r="8.5"/>
+                              </svg>
+                            </div>
+                        </div>
+
+                        <div className="">
+                          <p className="text-start md:text-lg">illustrator</p>
+                            <div className="flex justify-center space-x-2">
+
+                              <svg className="flex items-center mt-2 w-3 fill-wbeige" width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="9.5" cy="8.5" r="8.5"/>
+                              </svg>
+
+                              <svg className="flex items-center mt-2 w-3 fill-wbeige" width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="9.5" cy="8.5" r="8.5"/>
+                              </svg>
+
+                              <svg className="flex items-center mt-2 w-3 fill-wbeige opacity-20" width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="9.5" cy="8.5" r="8.5"/>
+                              </svg>
+
+                              <svg className="flex items-center mt-2 w-3 fill-wbeige opacity-20" width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="9.5" cy="8.5" r="8.5"/>
+                              </svg>
+                            </div>
+                        </div>
+
+                        <div className="">
+                          <p className="text-start md:text-lg">figma</p>
+                            <div className="flex justify-center space-x-2">
+
+                              <svg className="flex items-center mt-2 w-3 fill-wbeige" width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="9.5" cy="8.5" r="8.5"/>
+                              </svg>
+
+                              <svg className="flex items-center mt-2 w-3 fill-wbeige" width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="9.5" cy="8.5" r="8.5"/>
+                              </svg>
+
+                              <svg className="flex items-center mt-2 w-3 fill-wbeige" width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="9.5" cy="8.5" r="8.5"/>
+                              </svg>
+
+                              <svg className="flex items-center mt-2 w-3 fill-wbeige opacity-20" width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="9.5" cy="8.5" r="8.5"/>
+                              </svg>
+                            </div>
+                        </div>
+                   
+                        
+                  </motion.div>
+
+                      
+                  {/* segunda coluna */}
+
+                  <motion.div className="mt-10 text-dpurp dark:text-main-bg flex items-center justify-center space-x-8 ml-8" >
+                        <p></p>
+                        <div className="">
+                          <p className="text-start md:text-lg">html, css, js</p>
+                            <div className="flex justify-center space-x-2 w-full">
+
+                              <svg className="flex items-center mt-2 w-3 fill-wbeige" width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="9.5" cy="8.5" r="8.5"/>
+                              </svg>
+
+                              <svg className="flex items-center mt-2 w-3 fill-wbeige" width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="9.5" cy="8.5" r="8.5"/>
+                              </svg>
+
+                              <svg className="flex items-center mt-2 w-3 fill-wbeige" width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="9.5" cy="8.5" r="8.5"/>
+                              </svg>
+
+                              <svg className="flex items-center mt-2 w-3 fill-wbeige opacity-20" width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="9.5" cy="8.5" r="8.5"/>
+                              </svg>
+                            </div>
+                        </div>
+
+                        <div className="">
+                          <p className="text-start md:text-lg">wordpress</p>
+                            <div className="flex justify-center space-x-2">
+
+                              <svg className="flex items-center mt-2 w-3 fill-wbeige" width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="9.5" cy="8.5" r="8.5"/>
+                              </svg>
+
+                              <svg className="flex items-center mt-2 w-3 fill-wbeige" width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="9.5" cy="8.5" r="8.5"/>
+                              </svg>
+
+                              <svg className="flex items-center mt-2 w-3 fill-wbeige" width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="9.5" cy="8.5" r="8.5"/>
+                              </svg>
+
+                              <svg className="flex items-center mt-2 w-3 fill-wbeige " width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="9.5" cy="8.5" r="8.5"/>
+                              </svg>
+                            </div>
+                        </div>
+
+                        <div className="">
+                          <p className="text-start md:text-lg">nextjs</p>
+                            <div className="flex justify-center space-x-2">
+
+                              <svg className="flex items-center mt-2 w-3 fill-wbeige" width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="9.5" cy="8.5" r="8.5"/>
+                              </svg>
+
+                              <svg className="flex items-center mt-2 w-3 fill-wbeige opacity-20" width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="9.5" cy="8.5" r="8.5"/>
+                              </svg>
+
+                              <svg className="flex items-center mt-2 w-3 fill-wbeige opacity-20" width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="9.5" cy="8.5" r="8.5"/>
+                              </svg>
+
+                              <svg className="flex items-center mt-2 w-3 fill-wbeige opacity-20" width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="9.5" cy="8.5" r="8.5"/>
+                              </svg>
+                            </div>
+                        </div>
+
+                        
+                   
+                        
+                  </motion.div>
+                
+                      {/* terceira coluna */}
+
+                  <motion.div className="mt-10 text-dpurp dark:text-main-bg flex items-center justify-center space-x-4 mb-16 " >
+                        <p className="md:text-lg mr-1.5 text-dbeige dark:text-pinky">soft</p>
+                        <div className="">
+                          <p className="text-start md:text-lg">communication</p>
+                            <div className="flex justify-center space-x-2 w-full">
+
+                              <svg className="flex items-center mt-2 w-3 fill-wbeige" width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="9.5" cy="8.5" r="8.5"/>
+                              </svg>
+
+                              <svg className="flex items-center mt-2 w-3 fill-wbeige" width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="9.5" cy="8.5" r="8.5"/>
+                              </svg>
+
+                              <svg className="flex items-center mt-2 w-3 fill-wbeige" width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="9.5" cy="8.5" r="8.5"/>
+                              </svg>
+
+                              <svg className="flex items-center mt-2 w-3 fill-wbeige" width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="9.5" cy="8.5" r="8.5"/>
+                              </svg>
+                            </div>
+                        </div>
+
+                        <div className="">
+                          <p className="text-start md:text-lg">proactivity</p>
+                            <div className="flex justify-center space-x-2">
+
+                              <svg className="flex items-center mt-2 w-3 fill-wbeige" width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="9.5" cy="8.5" r="8.5"/>
+                              </svg>
+
+                              <svg className="flex items-center mt-2 w-3 fill-wbeige" width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="9.5" cy="8.5" r="8.5"/>
+                              </svg>
+
+                              <svg className="flex items-center mt-2 w-3 fill-wbeige" width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="9.5" cy="8.5" r="8.5"/>
+                              </svg>
+
+                              <svg className="flex items-center mt-2 w-3 fill-wbeige opacity-20" width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="9.5" cy="8.5" r="8.5"/>
+                              </svg>
+                            </div>
+                        </div>
+
+                        <div className="space-x-5">
+                          <p className="text-center md:text-lg">patience</p>
+                            <div className="flex justify-center space-x-2">
+
+                              <svg className="flex items-center mt-2 w-3 fill-wbeige" width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="9.5" cy="8.5" r="8.5"/>
+                              </svg>
+
+                              <svg className="flex items-center mt-2 w-3 fill-wbeige" width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="9.5" cy="8.5" r="8.5"/>
+                              </svg>
+
+                              <svg className="flex items-center mt-2 w-3 fill-wbeige" width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="9.5" cy="8.5" r="8.5"/>
+                              </svg>
+
+                              <svg className="flex items-center mt-2 w-3 fill-wbeige opacity-20" width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="9.5" cy="8.5" r="8.5"/>
+                              </svg>
+                            </div>
+                        </div>
+
+                        
+                   
+                        
+                  </motion.div>
+
+                  </div>
+              
+              
               
               </motion.div>
         
@@ -260,7 +498,8 @@
             </motion.div>
 
           </motion.div>
-
+          
+        
 
 
         {/* Footer */}
