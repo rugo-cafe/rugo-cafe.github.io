@@ -2,5 +2,5 @@
 
 Código fonte do meu website pessoal feito com Next.JS + TailwindCSS + Framer Motions
 
-https://vitorhugocunha.site/
+https://vitorhugocunha.xyz/
 
